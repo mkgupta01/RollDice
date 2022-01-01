@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuriousJr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maincontainner">
+        <h4 id="heading">Roll The Dice</h4>
+        <div class="info">
+            <span class="left">Selected Variable:<span id="variable">0</span></span>
+            <span class="right">Score:<score id="score">0</score></span>
+        </div>
+        <div class="dice">
+            <img class="dice_img" src="/img/dice1.jpg" alt="img not found">
+        </div>
+        <div class="dailpad">
+            <!-- creating button for inputs using radio button -->
+            <input type="radio" name="choice" id="1" value="1">
+            <label for="1" class="lbl-radio">1</label>
+            <input type="radio" name="choice" id="2" value="2">
+            <label for="2" class="lbl-radio">2</label>
+            <input type="radio" name="choice" id="3" value="3">
+            <label for="3" class="lbl-radio">3</label>
+            <input type="radio" name="choice" id="4" value="4">
+            <label for="4" class="lbl-radio">4</label>
+            <input type="radio" name="choice" id="5" value="5">
+            <label for="5" class="lbl-radio">5</label>
+            <input type="radio" name="choice" id="6" value="6">
+            <label for="6" class="lbl-radio">6</label>
+        </div>
+        <div class="status">Loading! Game will start in few second!</div>
+        <div class="result"></div>
+    </div>
+
+    <!-- javascript -->
+    <script src="/script.js"></script>
+</body>
+</html> 
