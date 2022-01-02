@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- containner to feature game elements -->
     <div class="maincontainner">
+        <!-- heading -->
         <h4 id="heading">Roll The Dice</h4>
+
+        <!-- info panel -->
         <div class="info">
             <span class="left">Selected Variable:<span id="variable">0</span></span>
             <span class="right">Score:<score id="score">0</score></span>
         </div>
+
+        <!-- placing the dice -->
         <div class="dice">
-            <img class="dice_img" src="/img/dice1.jpg" alt="img not found">
+            <img class="dice_img" src="/img/dice0.jpg" alt="img not found">
         </div>
+
+        <!-- creating button for inputs using radio button -->
         <div class="dailpad">
-            <!-- creating button for inputs using radio button -->
             <input type="radio" name="choice" id="1" value="1">
             <label for="1" class="lbl-radio">1</label>
             <input type="radio" name="choice" id="2" value="2">
@@ -32,9 +39,31 @@
             <input type="radio" name="choice" id="6" value="6">
             <label for="6" class="lbl-radio">6</label>
         </div>
+
+        <!-- making the status bar -->
         <div class="status">Loading! Game will start in few second!</div>
+
+        <!-- making result section to display result when needed -->
         <div class="result"></div>
     </div>
+
+    <!-- creating instructions button for easeof user-->
+   <button id="ins-btn" onclick="show_instructions()">Instructions</button>
+   <div id="instructions-box">
+       <!-- writing all instruction in form of list -->
+       <h2>Instructions</h2>
+        <ul>
+            <li>The dice will keep shuffling for after each 10 seconds.</li>
+            <li>You have to guess any number from 1-6 in that time.</li>
+            <li>After the interval get over dice will roll.</li>
+            <li>If output on dice matches your guess your score will increment by 1 points.</li>
+            <li>Else your score will remain same.</li>
+            <li>The countdown will start again.</li>
+            <li>To RESTART the game reload the page.</li>
+        </ul>
+        <!-- close button to hide the instructions -->
+        <button id="close" onclick="hide_instructions()">Close</button>
+   </div>
 
     <!-- javascript -->
     <script src="/script.js"></script>
