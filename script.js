@@ -38,7 +38,7 @@ function update_input() {
 // function to roll the dice 
 function rolldice() {
     random_num = Math.floor(Math.random() * 6) + 1;
-    document.querySelector(".dice_img").setAttribute("src", "/img/dice" + random_num + ".jpg");
+    document.querySelector(".dice_img").setAttribute("src", "img/dice" + random_num + ".jpg");
 }
 
 //function to check and show result result and update score
@@ -54,7 +54,7 @@ function check(){
         }
         document.getElementById("score").innerHTML = score;
         setTimeout(() => {
-            document.querySelector(".dice_img").setAttribute("src", "/img/dice0.jpg");
+            document.querySelector(".dice_img").setAttribute("src", "img/dice0.jpg");
         }, 1000);
     }, 1000);
 }
