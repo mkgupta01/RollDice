@@ -174,3 +174,43 @@ input[type=radio]:checked + .lbl-radio{
     padding: 6px;
     cursor: pointer;
 }
+
+
+
+@media (max-width:600px){
+    .maincontainner{
+        width: 90%;
+        height: 40rem;
+        margin-top: 4rem;
+    }
+    #heading{
+        font-size: 2.8rem;
+    }
+    .dice{
+        margin: 20px;
+    }
+    .dailpad{
+        padding: 10px 9px;
+    }
+    .lbl-radio{
+        margin: .8rem ;
+    }
+    #instructions-box{
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        width: 80%;
+        height: 60%;
+        margin: auto;
+    }
+    #instructions-box>h2{
+        font-size: 24px;
+        margin-top: 2px;
+    }
+    #instructions-box>ul>li{
+        font-size: 14px;
+    }
+    .status ,.result{
+        font-size: 18px;
+    }
+}

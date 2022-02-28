@@ -2,14 +2,13 @@
 let score = 0;
 let user_input=0;
 let random_num=0;
-let time=10;
+let time=6;
 
 // comment this line to stop the game 
 setInterval(startCountDown, 1000);
 
 //update timer
 function startCountDown(){
-    setTimeout(() => {
         document.querySelector(".result").innerHTML="";
         update_input();
         if(time==-1){
@@ -17,10 +16,10 @@ function startCountDown(){
             check();
             time=10;//updating timer value      
         }else{
-            setTimeout(document.querySelector(".status").innerHTML=`Dice will roll in ${time} sec.`,1000);
+            document.querySelector(".status").innerHTML=`Dice will roll in ${time} sec.`;
             time--;
         }
-    }, 1000);
+    
 }
 
 //function to get choice of user 
@@ -38,7 +37,7 @@ function update_input() {
 // function to roll the dice 
 function rolldice() {
     random_num = Math.floor(Math.random() * 6) + 1;
-    document.querySelector(".dice_img").setAttribute("src", "/img/dice" + random_num + ".jpg");
+    document.querySelector(".dice_img").setAttribute("src", "img/dice" + random_num + ".jpg");
 }
 
 //function to check and show result result and update score
